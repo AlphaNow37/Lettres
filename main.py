@@ -1,4 +1,4 @@
-
+# fonction qui transforme un text
 def ascii_text(text):
     text = text.lower()
     lines = text.split("\n")
@@ -13,8 +13,9 @@ def ascii_text(text):
         result += f"{l1}\n{l2}\n{l3}\n"
     return result
 
-
+# fonction qui retourne une liste de gros char
 def get_chars():
+    # tu dois avoir le fichier "letters"
     with open("letters") as file:
         contenu = file.read()
         lines = contenu.split("\n")
